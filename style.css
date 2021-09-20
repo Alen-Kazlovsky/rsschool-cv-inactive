@@ -1,0 +1,291 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: rgb(189, 221, 221);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: Forum;
+    src: url(/src/Forum-Regular.ttf);
+}
+
+.main {
+    background-color: rgb(189, 221, 221);
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.header_main-nav {
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 76px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: initial;
+    letter-spacing: 2px;
+}
+
+.photo {
+    max-width: 70%;
+    max-height: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+figcaption {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 4px;
+}
+
+.person {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.person_div {
+    max-width: 1024px;
+    margin: 8px auto;
+    text-align: center;
+}
+
+.header_main-nav-size {
+    max-width: 669px;
+    margin: 8px auto;
+    text-align: center;
+}
+
+.rs {
+    max-width: 10%;
+    max-height: 10%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    /* Убирает подчеркивание для ссылок */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: rgb(37, 32, 32);
+    /* Цвет ссылки */
+}
+
+.about_me {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.about_me i {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 2px auto;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(22, 41, 41);
+}
+
+.motto {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    letter-spacing: 5px;
+    margin: 3px auto;
+}
+
+.about_me-div {
+    max-width: 1024px;
+    margin: 2px auto;
+    padding: 2px;
+    align-items: center;
+    letter-spacing: 1px
+}
+
+.about_me-div img {
+    max-width: 212px;
+    max-height: 181px;
+    margin-top: 5px;
+}
+
+.details {
+    max-width: 1024px;
+    margin: 0px auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.footer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 1024px;
+}
+
+.higher_education {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 2px auto;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(22, 41, 41);
+}
