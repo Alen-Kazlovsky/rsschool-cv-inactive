@@ -2,85 +2,120 @@
 <html lang="en">
 
 <head>
-    <title>Alen Kazlouski - CV</title>
-    <style>
-        footer {
-            width: 1000px;
-            margin: auto;
-        }
-        
-        #main {
-            width: 1000px;
-            margin: 0 auto;
-        }
-        
-        #person {
-            text-align: center;
-        }
-        
-        #photo {
-            width: 800px;
-            height: 533px;
-            border: 2px solid #16161691;
-        }
-        
-        #motto {
-            font-family: Arial;
-            font-size: 120%;
-        }
-        
-        #rs {
-            width: 68px;
-            height: 25px;
-        }
-    </style>
+    <meta charset='utf-8'>
+    <title>CV - Alen Kazlouski</title>
+    <link rel='stylesheet' href='style.css'>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
 </head>
 
 <body>
-    <div id="main">
+
+    <main class="main">
         <header>
-            <h1 id="person">Alen Kazlouski</h1>
+            <div class="person_div">
+                <h1 class="person">Alen Kazlouski</h1>
+            </div>
+
+            <div class="header_main-nav-size">
+                <nav>
+                    <ul class="header_main-nav">
+                        <li> <a href="#about_me" class="main_nav-link">About me</a> </li>
+                        <li> <a href="#education" class="main_nav-link">Education</a> </li>
+                        <li> <a href="#experience" class="main_nav-link">Experience</a> </li>
+                        <li> <a href="#contacts" class="main_nav-link">Contacts</a> </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <figure>
+                    <img class="photo" src="/src/foto.jpg" alt="my_photo">
+                    <figcaption>My photo</figcaption>
+                </figure>
+            </div>
+
         </header>
-        <figure>
-            <img id="photo" src="https://sun9-55.userapi.com/impf/c626721/v626721341/a498/JWrt3CUg6-4.jpg?size=1280x853&quality=96&sign=24060c884798d1cc61158663dd5b7bab&type=album" alt="my_photo">
-		<figcaption>Alen Kazlouski</figcaption>
-        </figure>
 
 
-        <p>Phone numbers to contact:</p>
-        <ul>
-            <li>+375 29 671 22 72</li>
-            <li>+375 33 301 77 31</li>
-        </ul>
+        <section id="about_me" class="about_me">
 
-        <main>
-            <h2><i>About me</i> </h2>
-        </main>
+            <div class="about_me-div">
+                <h2><i>About me</i> </h2>
+                <article>
+                    <h2 class="motto"> My motto in life is never stop ! </h2>
+                    <p>I like programming and I want to develop in this direction. </p>
 
-        <article>
-            <h2 id="motto"> My motto in life is never stop ! </h2>
+                    <p>I have skills in the following:</p>
+                    <img src="/src/512px-HTML5_logo_and_wordmark.svg.png" alt="html5">
+                    <img src="/src/1200px-Javascript_badge.svg.png" alt="js">
+                    <img src="/src/CSS3_logo_and_wordmark.svg.png" alt="css">
+                    <br>
+                    <p> I previously studied the Java language. Now I want to try myself in <em>Web development</em>.</p>
+                    <br>
+                    <p>During my school years, I studied two languages: English and German.<br> I learned two languages because I went to a language school.<br> In my opinion I speak English at least at the level of B1 or “Intermediate”.</p>
+                </article>
+                <section id="education" class="Education">
+
+                    <div>
+                        <br>
+                        <h2 class="higher_education">Higher education</h2>
+                        <p>University:Belarusian National Technical University</p>
+                        <p>Faculty: Mechanical Engineering</p>
+                        <p>2009 - 2014</p>
+                    </div>
+
+                </section>
+
+                <section id="experience" class="ex">
+                    <h2 class="higher_education">Example of my code below:</h2>
+                    <div>
+                        <pre><code class="js"> 
+                            function factorial(n) {
+                            if (n &lt; 0 || n > 12)
+                              throw new RangeError();
+                            return n &lt;= 1 ? 1 : n * factorial(n - 1);
+                          }    </code></pre>
+                    </div>
+
+                </section>
+
+                <div class="details">
+                    <details id="contacts" open>
+                        <summary class="higher_education">Phone numbers to contact:</summary>
+                        <ul>
+                            <li>+375 29 671 22 72</li>
+                            <li>+375 33 301 77 31</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </section>
 
 
-            <p>I like programming and I want to develop in this direction. </p>
-            <p>I graduated from the Belarusian National Technical University with a degree in Engineering in mechanical engineering.</p>
-            <p>I have skills in the following:</p>
-            <img src="https://sun9-74.userapi.com/c639424/v639424421/3f702/Uls8ULlKXs8.jpg?ava=1" alt="html5">
-            <img src="https://www.c-sharpcorner.com/UploadFile/MinorCatImages/054636AM.png" alt="js">
-            <img src="https://codexvalley.com/wp-content/uploads/2018/12/css.png" alt="css">
-            <img src="https://sun1-23.userapi.com/impf/c623126/v623126549/5049/OeeblzaAIIs.jpg?size=50x0&amp;quality=88&amp;crop=0,0,200,200&amp;sign=266460e7f2a3202f996539c134bc02d2&amp;ava=1" alt="java"> <br>
-            <p> I previously studied the Java language. Now I want to try myself in <em>Web development</em>.</p>
-            <p>During my school years, I studied two languages: English and German.<br> I learned two languages because I went to a language school.<br> In my opinion I speak English at least at the level of B1 or “Intermediate”.</p>
-        </article>
 
-    </div>
+    </main>
 
     <footer>
-	Link to the course: <a href="https://github.com/rolling-scopes-school/tasks"> RSschool </a> <br>
-        Link for my repository on GitHub: <a href="https://github.com/Alen-Kazlovsky/rsschool-cv"> My CV </a> <br>
-        <img id="rs" src="https://app.rs.school/static/images/logo-rsschool3.png" alt="Rolling School">
+        <div class="footer">
+            <h2>Link to the course: </h2>
+            <a href="https://rs.school/js"> RSschool </a>
+            <p></p>
+            <p>for my repository on GitHub:</p>
+            <a href="https://github.com/Alen-Kazlovsky/rsschool-cv"> Repository </a>
+            <img class="rs" src="https://app.rs.school/static/images/logo-rsschool3.png" alt="Rolling School">
+        </div>
 
     </footer>
 
+
 </body>
+
 
 </html>
